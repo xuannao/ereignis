@@ -53,6 +53,10 @@ endif()
 # Package Config
 # --------------------------------------------------------------------------------------------------------
 
+if(NOT PACKAGEPROJECT)
+    return()
+endif()
+
 CPMFindPackage(
   NAME           PackageProject
   VERSION        1.13.0
