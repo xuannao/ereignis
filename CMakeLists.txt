@@ -34,8 +34,8 @@ include("cmake/cpm.cmake")
 
 CPMFindPackage(
   NAME           coco
-  VERSION        4.3.0
-  GIT_REPOSITORY "https://github.com/Curve/coco"
+  GIT_TAG        master
+  GIT_REPOSITORY "https://github.com/xuannao/coco"
 )
 
 target_link_libraries(${PROJECT_NAME} INTERFACE cr::coco)
